@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTube Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <div class="hamburger" id="hamburger" aria-expanded="false">
+          &#9776;
+        </div>
+        <div class="logo">
+          <img src="logo1.png" alt="MyTube Logo" class="logo-icon" />
+          <h1>MyTube</h1>
+        </div>
+      </div>
+      <div class="header-right">
+        <h2>Time: <span id="current-time"></span></h2>
+        <h3>Date: <span id="current-date"></span></h3>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+      <ul>
+        <li id="home-btn">Home</li>
+        <li id="livingroom-btn">Livingroom</li>
+        <li id="bedroom-btn">Bedroom</li>
+        <li id="kitchen-btn">Kitchen</li>
+        <li id="garden-btn">Garden</li>
+      </ul>
+    </aside>
+
+    <main class="content" id="content">
+      <div id="home-page" class="home-background">
+        <h2 style="text-align: center">Welcome to MyTube - Home</h2>
+        <div class="widget-container">
+          <div class="widget1" style="background-image: url('livingroom.jpg')">
+            <h3>Livingroom</h3>
+          </div>
+          <div class="widget1" style="background-image: url('bedroom.jpg')">
+            <h3>Bedroom</h3>
+          </div>
+        </div>
+        <div class="widget-container">
+          <div class="widget1" style="background-image: url('kitchen.jpg')">
+            <h3>Kitchen</h3>
+          </div>
+          <div class="widget1" style="background-image: url('garden.jpg')">
+            <h3>Garden</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    //Remember to add this ...database line in your code unless it will not work
+    f
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <!-- lien ket voi functions.js -->
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCbf1-kAHwLadyC5Rvvzs_LfxZVeLw4_mg",
+        authDomain: "tmh28-2f86d.firebaseapp.com",
+        databaseURL: "https://tmh28-2f86d-default-rtdb.firebaseio.com",
+        projectId: "tmh28-2f86d",
+        storageBucket: "tmh28-2f86d.appspot.com",
+        messagingSenderId: "161356383454",
+        appId: "1:161356383454:web:978cab2cd1bc026c05ae4f",
+        measurementId: "G-RZVMBMXLLH",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </body>
+</html>
